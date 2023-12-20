@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Learn jQuery By Shahzaib Kamal and Joe Parys</title>
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				// jQuery Codes must be here
+				
+				$('#div1').click(function(){
+					$('#div2').toggle();
+				});
+				
+				$('#div3').click(function(){
+					$('#div4').fadeToggle();
+				});
+				
+				$('#div5').click(function(){
+					$('#div6').slideToggle();
+				});
+				
+			});
+		</script>
+		<style>
+			.main {
+			margin: 10px;
+			float: left;
+			}
+			.head_style {
+				background:orange;width:300px;height:50px;text-align:center;s
+			}
+			.body_style {
+				background:red;width:300px;height:300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div id="div1" class="head_style">Click to Toggle</div>
+			<div id="div2" class="body_style" ></div>
+		</div>
+		
+		<div class="main">
+			<div id="div3" class="head_style">Click to Toggle</div>
+			<div id="div4" class="body_style"  ></div>
+		</div>
+		
+		<div class="main">
+			<div id="div5" class="head_style">Click to Toggle</div>
+			<div id="div6" class="body_style"></div>
+		</div>
+		
+	</body>
+</html>

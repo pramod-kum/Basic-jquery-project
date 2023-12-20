@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Learn jQuery By Shahzaib Kamal and Joe Parys</title>
+		<script src="js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				// jQuery Codes must be here
+				$('#div1').click(function(){
+			
+					$('#div1').fadeOut();
+					//alert('The Div has been Clicked');
+				});
+				
+				$('.div2').click(function(){
+			
+					$('.div2').fadeOut();
+					//alert('The Div has been Clicked');
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1" style="background:orange;width:500px;height:300px;"></div>
+		<div class="div2" style="background:red;width:500px;height:300px;"></div>
+	</body>
+</html>

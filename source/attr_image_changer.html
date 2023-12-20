@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Learn jQuery By Shahzaib Kamal and Joe Parys</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-color.js"></script>
+		<script>
+			$(document).ready(function(){
+				// jQuery Codes must be here
+				$('#img').mouseenter(function(){
+					$(this).attr('src', 'images/img2.jpg');
+				});
+				
+				$('#img').mouseleave(function(){
+					$(this).attr('src', 'images/img1.jpg');
+				});
+				$('#btn1').click(function(){
+					//var var1 = $('#img').attr('src');
+					//alert(var1);
+					alert($('#img').attr('src'));
+				});
+				
+				$('#btn2').click(function(){
+					$('#img').attr('width', '600px');
+				});
+				
+				$('#btn3').click(function(){
+					$('#img').attr('height', '600px');
+				});
+			});
+		</script>
+		<style>
+			.main {
+				margin: 10px;
+			}
+			.body_style {
+				background:red;width:300px;height:300px;margin:20px;color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+		<button id="btn1">Click to get attr value</button>
+		<button id="btn2">Click to Change width</button>
+		<button id="btn3">Click to Change height</button><br>
+			<img id="img" src="images/img1.jpg" width="500px" height="500px">
+		</div>
+	</body>
+</html>

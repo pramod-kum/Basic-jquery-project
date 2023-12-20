@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Learn jQuery By Shahzaib Kamal and Joe Parys</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-color.js"></script>
+		<script>
+			$(document).ready(function(){
+				// jQuery Codes must be here
+				
+				$('#div1').click(function(){
+					$(this).animate({
+						left: '300px',
+						top: '0',
+						backgroundColor: 'blue'
+					},1000).animate({
+						left: '300px',
+						top: '300px',
+						backgroundColor: 'green'
+					},1000).animate({
+						left: '0',
+						top: '300px',
+						backgroundColor: 'orange'
+					},1000).animate({
+						left: '0',
+						top: '0',
+						backgroundColor: 'red'
+					},1000).slideUp().slideDown().fadeOut();
+					
+				});
+				$('button').click(function(){
+					$('#div1').stop();
+				});
+				
+				
+			});
+			
+			
+		</script>
+		<style>
+			.main {
+				margin: 10px;
+			}
+			.body_style {
+				background:red;width:300px;height:300px;margin:20px;position:absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<button>Click to Stop</button>
+		<div class="main">
+			<div id="div1" class="body_style" ></div>
+		</div>
+	
+		
+		
+	</body>
+</html>

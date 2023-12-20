@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Learn jQuery By Shahzaib Kamal and Joe Parys</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-color.js"></script>
+		<script>
+			$(document).ready(function(){
+				// jQuery Codes must be here
+				$('#btn1').click(function(){
+					//$('#div1').width(500);
+					//$('#div1').height(500);
+					$('#div1').text('The width of this Element is: '+$('#div1').outerWidth(true)+'px and the Height is: '+$('#div1').outerHeight(true)+'px.');
+				});
+			});
+		</script>
+		<style>
+			.main {
+				margin: 10px;
+			}
+			.body_style {
+				background:red;width:300px;height:300px;margin:20px;color: white;padding:20px;margin:50px;border: 5px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<button id="btn1">Click to change Width</button>
+			<div id="div1" class="body_style">This is the div1</div>
+		</div>
+	</body>
+</html>

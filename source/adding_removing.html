@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Learn jQuery By Shahzaib Kamal and Joe Parys</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-color.js"></script>
+		<script>
+			$(document).ready(function(){
+				// jQuery Codes must be here
+				$('#btn1').click(function(){
+					$('#para1').append('<p>Hello World</p>');
+				});
+				
+				$('#btn2').click(function(){
+					$('#ol1').append('<li>New List Item</li>');
+				});
+				
+				$('#btn3').click(function(){
+					$('#para1').prepend('<p>The New Content in Paragraph</p>');
+				});
+				
+				$('#btn4').click(function(){
+					$('#ol1').prepend('<li>New Content in List</li>');
+				});
+				
+				$('#btn5').click(function(){
+					$('#para1').after('<p>new Content</p>');
+				});
+				
+				$('#btn6').click(function(){
+					$('#para1').before('<p>New Content</p>');
+				});
+				
+				$('#btn7').click(function(){
+					$('#para1').remove();
+				});
+				
+				$('#btn8').click(function(){
+					$('#para1').empty();
+				});
+			});
+		</script>
+		<style>
+			.main {
+				margin: 10px;
+			}
+			.body_style {
+				background:red;width:300px;height:300px;margin:20px;color: white;
+			}
+			#para1 {
+				background: blue;
+				color: white;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<button id="btn1">Add more Content(After:inside)</button>
+			<button id="btn3">Add more Content (Before:inside)</button>
+			<button id="btn2">Add more Content in List(After:inside)</button>
+			<button id="btn4">Add more Content in List(Before:inside)</button>
+			<button id="btn5">Add more Content (After)</button>
+			<button id="btn6">Add more Content (Before)</button><br>
+			<button id="btn7">Remove The Element and its Children</button>
+			<button id="btn8">Remove The Element's Children</button>
+			<div id="para1">
+				<p>This is the First Paragraph</p>
+				<p>This is the Second Paragraph</p>
+			</div>
+			<ol id="ol1">
+				<li>First List Item</li>
+				<li>Second List Item</li>
+				<li>Third List Item</li>
+			</ol>
+		</div>
+	</body>
+</html>
